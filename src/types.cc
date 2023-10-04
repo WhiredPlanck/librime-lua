@@ -358,7 +358,7 @@ namespace SegmentationReg {
 
   static const luaL_Reg vars_get[] = {
     { "input", WRAPMEM(T::input) },
-    { "size", WRAPMEM(T, size) },
+    { "size", WRAPMEM(T::size) },
     { NULL, NULL },
   };
 
@@ -589,14 +589,14 @@ namespace CommitHistoryReg {
     {"repr",WRAPMEM(T,repr)},
     {"latest_text",WRAPMEM(T, latest_text)},
     //  std::list
-    {"empty", WRAPMEM(T, empty)},
-    {"clear", WRAPMEM(T, clear)},
-    {"pop_back", WRAPMEM(T, pop_back)},
+    {"empty", WRAPMEM(T::empty)},
+    {"clear", WRAPMEM(T::clear)},
+    {"pop_back", WRAPMEM(T::pop_back)},
     { NULL, NULL },
   };
 
   static const luaL_Reg vars_get[] = {
-    {"size", WRAPMEM(T, size)},
+    {"size", WRAPMEM(T::size)},
     { NULL, NULL },
   };
 
