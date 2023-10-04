@@ -17,7 +17,7 @@
   #include <filesystem>
   namespace ns = std::filesystem;
 #else
-  #include <boost::filesystem.hpp>
+  #include <boost/filesystem.hpp>
   namespace ns = boost::filesystem;
 #endif
 
